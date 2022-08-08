@@ -134,6 +134,18 @@ public void currentRadioStationNumber() {
         Assertions.assertEquals(actual, expected);
     }
 
+
+    @Test
+    public void turnUpVolume2() {
+        Radio radio = new Radio();
+
+        radio.setCurrentVolume(11);
+
+        int actual = radio.getCurrentVolume();
+        int expected = 0;
+
+        Assertions.assertEquals(actual, expected);
+    }
     @Test
     public void turnDownVolume() {
         Radio radio = new Radio();
